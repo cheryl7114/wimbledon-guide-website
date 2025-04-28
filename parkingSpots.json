@@ -1,0 +1,139 @@
+{
+  "parkingSpots": [
+    {
+      "name": "Centre Court Car Park",
+      "lat": 51.4203,
+      "lng": -0.2068,
+      "formatted_address": "Queens Road, Wimbledon, London SW19 8YE, UK",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO29Z9DCxvOS2Ua-7lQrHfNfaStsfAmlbUMQ&s"
+        }
+      ],
+      "website": "https://www.premiumcarparks.co.uk/car-park/centre_court",
+      "international_phone_number": "+44 333 222 9090"
+    },
+    {
+      "name": "Wimbledon Station Car Park",
+      "lat": 51.4212,
+      "lng": -0.2066,
+      "formatted_address": "The Broadway, London SW19 7NL, UK",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://images.justpark.com/eyJidWNrZXQiOiJqdXN0cGFyay1pbWFnZS1yZXNpemVyLXByb2R1Y3Rpb24iLCJrZXkiOiJzaHV0dGVyc3RvY2svMTU1NDE0LXdpbWJsZWRvbi1zdGF0aW9uLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyOTQsImhlaWdodCI6MTI1MCwiZml0IjoiY292ZXIifSwianBlZyI6eyJxdWFsaXR5Ijo3MH0sIndlYnAiOnsicXVhbGl0eSI6NzB9fX0="
+        }
+      ],
+      "website": "https://www.southwesternrailway.com/travelling-with-us/at-the-station/wimbledon",
+      "international_phone_number": "+44 345 600 0650"
+    },
+    {
+      "name": "Hartfield Road Car Park",
+      "lat": 51.4210,
+      "lng": -0.2090,
+      "formatted_address": "Hartfield Road, London SW19 3TB, UK",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://res.cloudinary.com/fxtr/image/upload/garages/garage-images/ChIJGbfhPboIdkgRk3kz9PSrCwA/garageImage.jpg"
+        }
+      ],
+      "website": "https://www.merton.gov.uk/streets-parking-transport/parking/carparks/wimbledon",
+      "international_phone_number": null
+    },
+    {
+      "name": "Wimbledon Quarter Car Park",
+      "lat": 51.4208,
+      "lng": -0.2069,
+      "formatted_address": "Wimbledon Quarter, The Broadway, London SW19 8YE, UK",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://wimbledonquarter.com/wp-content/uploads/2023/12/WinterFestLoveWimbledon261123-356-1-1024x683.jpg"
+        }
+      ],
+      "website": "https://wimbledonquarter.com/parking/",
+      "international_phone_number": null
+    },
+    {
+      "name": "St George's Road Car Park",
+      "lat": 51.4153,
+      "lng": -0.2136,
+      "formatted_address": "St George's Road, London SW19 4DP, UK",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://photos.plugshare.com/photos/82759.jpg"
+        }
+      ],
+      "website": "https://www.merton.gov.uk/streets-parking-transport/parking/carparks",
+      "international_phone_number": null
+    },
+    {
+      "name": "Wimbledon Village Parking",
+      "lat": 51.4258,
+      "lng": -0.2187,
+      "formatted_address": "High Street, Wimbledon Village, London SW19 5DX",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://uploads.justpark.com/cdn/media/uploaded/listing-photos/9ccd36de-fc21-47eb-a2c2-44c9db559d3e-normal.jpg"
+        }
+      ],
+      "website": null,
+      "international_phone_number": null
+    },
+    {
+      "name": "Southside Car Park",
+      "lat": 51.4169,
+      "lng": -0.2267,
+      "formatted_address": "Southside Common, Wimbledon, London SW19 4TF",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://d13esfgglb25od.cloudfront.net/lot_img/114603/1eb8ba9c4577418c93e1539b4bd914ae.jpg"
+        }
+      ],
+      "website": null,
+      "international_phone_number": null
+    },
+    {
+      "name": "The Broadway Parking",
+      "lat": 51.4199,
+      "lng": -0.2024,
+      "formatted_address": "The Broadway, Wimbledon, London SW19 1RH",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPFo5aW3EVdn2gIOVWPONDDkb7cURgb3PHnQ&s"
+        }
+      ],
+      "website": null,
+      "international_phone_number": null
+    },
+    {
+      "name": "Worple Road Parking",
+      "lat": 51.4228,
+      "lng": -0.2147,
+      "formatted_address": "Worple Road, Wimbledon, London SW19 4DF",
+      "rating": null,
+      "user_ratings_total": null,
+      "photos": [
+        {
+          "photo_reference": "https://uploads.justpark.com/cdn/media/uploaded/listing-photos/cc618ece-2884-40e9-9812-1d81efc05fad-normal.jpg"
+        }
+      ],
+      "website": null,
+      "international_phone_number": null
+    }
+  ]
+}

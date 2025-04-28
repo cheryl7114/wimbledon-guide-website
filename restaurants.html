@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wimbledon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/icon_small_red.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>   <!-- execute script after DOM parsing  -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ios support -->
+    <link rel="icon" href="icons/icon_small_red.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/icon_medium_green.png">
+    <meta name="msapplication-TileImage" content="icons/icon_large_blue.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="white"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Online First Example">
+</head>
+<body>
+<!-- Header -->
+<div id="ck_headerContainer"></div>
+
+<!-- Hero -->
+<section class="ck_hero" id="ck_restaurantsHero">
+    <h1>Mom, What's For Dinner?</h1>
+</section>
+
+<!-- Main Content -->
+<main class="ck_mainContent">
+    <div class="ck_filterContainer2">
+        <h1 class="ck_pageHeading">Top Places to Eat</h1>
+        <div class="ck_filterDropdown">
+            <label for="attractionTypeFilter">Filter by Type:</label>
+            <select id="attractionTypeFilter" onchange="filterAttractions()" class="ck_filterSelect">
+                <option value="all" selected>All</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="cafe">Cafe</option>
+                <option value="bakery">Bakery</option>
+                <option value="bar">Bar</option>
+            </select>
+        </div>
+    </div>
+    <div class="ck_placeGrid" id="ck_thingsToDoContainer"></div>
+</main>
+
+
+<!-- Footer -->
+<div id="ck_footerContainer"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgn75RUH1-Pk4J0Z0xV5MDV2wR6xg3f5s&libraries=places"></script>
+</body>
+</html>

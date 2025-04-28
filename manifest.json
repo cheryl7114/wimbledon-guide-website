@@ -1,0 +1,27 @@
+{
+  "name": "Online First Example",
+  "short_name": "Online",
+  "description": "This implements an online first policy when loading a PWA's assets.",
+  "start_url": "./",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white",
+  "orientation": "any",
+  "icons": [{
+    "src": "icons/icon_small_red.png",
+      "sizes": "16x16 127x127",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }, {
+      "src": "icons/icon_medium_green.png",
+      "sizes": "128x128 511x511",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }, {
+      "src": "icons/icon_large_blue.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+}

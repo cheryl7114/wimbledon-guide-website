@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+    <title>Wimbledon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/icon_small_red.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>   <!-- execute script after DOM parsing  -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ios support -->
+    <link rel="icon" href="icons/icon_small_red.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/icon_medium_green.png">
+    <meta name="msapplication-TileImage" content="icons/icon_large_blue.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="white"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Online First Example">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="ck_headerContainer"></div>
+
+    <!-- Hero -->
+    <section class="ck_hero">
+        <h1>Explore the Best of Wimbledon</h1>
+        <p>Discover iconic tennis venues, charming parks, and local culture in one of London's most famous districts.</p>
+        <a href="thingsToDo.html" class="ck_btn">Start Exploring</a>
+    </section>
+
+    <!--  Main Content  -->
+    <div class="ck_mainContent">
+        <!--   Interactive Map    -->
+        <div class="ck_mapContainer">
+            <h1>Interactive map</h1>
+            <div class="ck_mapControls">
+                <div class="ck_filterContainer">
+                    <button class="ck_filterBtn ck_activeFilter" id="all">All</button>
+                    <button class="ck_filterBtn" id="tourist_attraction">Attractions</button>
+                    <button class="ck_filterBtn" id="restaurant">Restaurants</button>
+                    <button class="ck_filterBtn" id="lodging">Hotels</button>
+                    <button class="ck_filterBtn" id="store">Shopping</button>
+                    <button class="ck_filterBtn" id="cafe">Cafe</button>
+                    <button class="ck_filterBtn" id="parking">Parking</button>
+                </div>
+                <div class="ck_searchContainer">
+                    <input type="text" id="ck_searchInput" placeholder="Search places...">
+                    <span id="ck_clearSearch" class="ck_searchClear">&times;</span>
+                    <button id="ck_searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div id="ck_map"></div>
+        </div>
+    </div>
+
+<!--    <div id="ck_currencyContainer">-->
+<!--        <div class="ck_mainContent">-->
+<!--            <h1><i>Currency Converter</i></h1>-->
+<!--            <div id="ck_currencyConverter">-->
+<!--                <div style="display: flex; align-items: center;">-->
+<!--                    <div id="amountInput">-->
+<!--                        <input type="number" id="currencyToConvertFromAmount" value="1" placeholder="Enter amount" oninput="performConversion()"/>-->
+<!--                    </div>-->
+<!--                    <div id="currencySelector"></div>-->
+<!--                </div>-->
+<!--                <div id="gbpContainer">-->
+<!--                    <label for="gbpValue">GBP: </label>-->
+<!--                    <input readonly id="gbpValue">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div id="ck_currencyContainer">
+        <div class="ck_mainContent">
+            <h1><i>Currency Converter</i></h1><br>
+            <h4>Plan out your budget before the trip</h4><br><br>
+            <div id="ck_currencyConverter">
+                <div class="converter-row">
+                    <div id="amountInput">
+                        <input type="number" id="currencyToConvertFromAmount" value="1" placeholder="Enter amount" oninput="performConversion()"/>
+                    </div>
+                    <div id="currencySelector"></div>
+                </div>
+                <div id="gbpContainer">
+                    <div id="gbpLabel">GBP</div>
+                    <input readonly id="gbpValue">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ck_weatherContainer">
+        <div class="ck_weatherHeader">
+            <h1>Wimbledon Weather Forecast</h1>
+        </div>
+
+        <div class="ck_weatherWrapper">
+            <!-- Today's Weather Panel -->
+            <div class="ck_todayPanel">
+                <h2>Today's Weather</h2>
+                <div class="ck_weatherEmoji" id="ck_todayEmoji">⛅️</div>
+                <div class="ck_todayTemp" id="ck_todayTemp">--°C</div>
+                <div class="ck_todayDetails" id="ck_todayDesc">Loading...</div>
+            </div>
+
+            <!-- Forecast Panel -->
+            <div class="ck_forecastPanel">
+                <h2>10-Day Forecast</h2>
+                <div id="ck_weatherForecast" class="ck_forecastGrid">
+                    <!-- Forecast cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ck_errorModal">
+        <div id="ck_modalContent">
+            <span id="ck_closeModal">&times;</span>
+            <h3>Error</h3>
+            <p id="ck_modalMessage"></p>
+            <button class="ck_goldBtn" id="ck_modalConfirm">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="ck_footerContainer"></div>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgn75RUH1-Pk4J0Z0xV5MDV2wR6xg3f5s&libraries=marker,places"></script>
+</body>
+</html>
