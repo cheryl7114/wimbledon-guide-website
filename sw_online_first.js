@@ -13,7 +13,7 @@ const filesToCache = [
     'script.js',
     'manifest.json',
     'placeTypes.json',
-    'icons/icon_small_red.png',
+    'icons/icon_small_pink.png',
     'icons/icon_medium_green.png',
     'icons/icon_large_blue.png',
     'images/placeholder.png',

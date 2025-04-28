@@ -9,7 +9,7 @@
   "theme_color": "white",
   "orientation": "any",
   "icons": [{
-    "src": "icons/icon_small_red.png",
+    "src": "icons/icon_small_pink.png",
       "sizes": "16x16 127x127",
       "type": "image/png",
       "purpose": "any maskable"
