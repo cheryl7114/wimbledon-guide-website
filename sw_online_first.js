@@ -1,13 +1,25 @@
-const cacheName = 'online_pwa_example_version_1.0'
+const cacheName = 'wimbledon-guide-website-cache'
 
-const filesToCache =
-        ['manifest.json',
-            'index.html',
-            'offline_message.html',
-            'css/style.css',
-            'icons/icon_small_red.png',
-            'icons/icon_medium_green.png',
-            'icons/icon_large_blue.png']
+const filesToCache = [
+    'index.html',
+    'offline_message.html',
+    'hotels.html',
+    'thingsToDo.html',
+    'restaurants.html',
+    'routePlanner.html',
+    'footer.html',
+    'header.html',
+    'css/style.css',
+    'script.js',
+    'manifest.json',
+    'placeTypes.json',
+    'icons/icon_small_red.png',
+    'icons/icon_medium_green.png',
+    'icons/icon_large_blue.png',
+    'images/placeholder.png',
+    'images/markers/default.png'
+]
+
 
 
 // Install the service worker and cache the files in the array filesToCache[] 

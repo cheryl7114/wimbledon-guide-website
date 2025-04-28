@@ -1,6 +1,6 @@
 // Service Worker Registration
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw_online_first.js")
+    navigator.serviceWorker.register("sw_online_first.js", { scope: "./" })
 }
 
 let iconMap = {}
@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.text())
         .then(data => {
             document.getElementById("ck_footerContainer").innerHTML = data
+
+            function updateOnlineStatus() {
+                if (!navigator.onLine) {
+                    showErrorModal("⚠️ You are offline. Some features may not work ⚠️")
+                }
+            }
+
+            window.addEventListener('online', updateOnlineStatus)
+            window.addEventListener('offline', updateOnlineStatus)
+
+            updateOnlineStatus() // Set initial state on load
         })
 
     // Fetch and load the JSON configuration at startup

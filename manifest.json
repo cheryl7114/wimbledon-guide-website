@@ -1,7 +1,7 @@
 {
-  "name": "Online First Example",
-  "short_name": "Online",
-  "description": "This implements an online first policy when loading a PWA's assets.",
+  "name": "Wimbledon Guide",
+  "short_name": "Wimbledon",
+  "description": "The ultimate travel guide for Wimbledon, London.",
   "start_url": "./",
   "scope": ".",
   "display": "standalone",
