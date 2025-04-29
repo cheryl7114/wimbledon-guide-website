@@ -727,7 +727,7 @@ function performNearbySearch(type, location) {
 
 function toggleDirections() {
     const icon = document.getElementById("ck_directionsChevron")
-    const isVisible = directions.style.display !== "none"
+    const isVisible = document.getElementById("ck_directions").style.display !== "none"
 
     document.getElementById("ck_transportMode").style.display = isVisible ? "none" : "block"
     document.getElementById("ck_directions").style.display = isVisible ? "none" : "block"
@@ -831,7 +831,8 @@ function getContentConfig(pageType) {
             containerId: "ck_thingsToDoContainer",
             types: ["tourist_attraction", "museum", "park", "art_gallery", "shopping_mall"],
             radius: 3000,
-            customSpots: parkingSpots
+            customSpots: parkingSpots,
+            customType: "parking"
         },
         'hotels': {
             containerId: "ck_hotelsContainer",
@@ -856,12 +857,7 @@ function filterAttractions() {
     placeCards.forEach(card => {
         const cardType = card.getAttribute("placeType")
 
-        // Show parking only when parking is selected, hide otherwise
-        if (cardType === "parking") {
-            card.style.display = selectedType === "parking" ? "flex" : "none"
-        } else {
-            card.style.display = selectedType === "all" || cardType === selectedType ? "flex" : "none"
-        }
+        card.style.display = selectedType === "all" || cardType === selectedType ? "flex" : "none"
     })
 }
 
@@ -922,18 +918,17 @@ function loadPlaces() {
                 photos: spot.photos ? [{ getUrl: () => spot.photos[0].photo_reference }] : null,
                 website: spot.website,
                 international_phone_number: spot.international_phone_number
-            }, pageConfig.customType || 'custom', true) // hidden by default
+            }, pageConfig.customType) 
         })
     }
 }
 
 // Helper function to create place cards
-function createPlaceCard(container, placeDetails, placeType, isHidden = false) {
+function createPlaceCard(container, placeDetails, placeType) {
     const photo = placeDetails.photos?.[0]?.getUrl({ maxWidth: 400 }) || 'images/placeholder.png'
     const card = document.createElement("div")
     card.className = "ck_placeCard"
     card.setAttribute("placeType", placeType)
-    if (isHidden) card.style.display = "none"
 
     card.innerHTML = `
         <img src="${photo}" alt="${placeDetails.name}">
